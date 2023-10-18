@@ -1,35 +1,30 @@
 body{
-    background: linear-gradient(to right, #074980, #79d3df);
+ background-image: linear-gradient(20deg, #ffc31a 0, #ffb42b 8.33%, #ffa338 16.67%, #ff9143 25%, #ff7d4b 33.33%, #ff6851 41.67%, #f25353 50%, #d94053 58.33%, #c23054 66.67%, #ae2455 75%, #9d1c56 83.33%, #8e1859 91.67%, #81195d 100%);
+
+* {
+    box-sizing: border-box;
 }
 
-h1{
-    text-align: center;
-    border: 2px solid rgb(84, 9, 119);
-    margin-left: 500px;
-    margin-right: 500px;
-    background-color: rgb(48, 170, 201);
-    color: rgb(204, 69, 193);
-    text-shadow: 2px 2px rgb(0, 0, 0);
-    box-shadow: 2px 2px black;
-}
-#przedmiot, #rok, #prowadzacy{
-    margin-top: 40px;
+.display {
+    background-color: #ddd;
+    font-size: 2.5rem;
+    padding: 0.25em;
+    text-align: right;
+    border-radius: 8px;
 }
 
-#imie{
-    margin-top: 300px;
+.btns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.25rem;
 }
 
-@media screen and (max-width: 800px) {
-    h1 {
-      margin-left: 100px;
-      margin-right: 100px;
-    }
-  }
-
-@media screen and (max-width: 380px) {
-    h1 {
-      margin-left: 0px;
-      margin-right: 0px;
-    }
-  }
+.btn,
+.clear {
+    font-size: 2.25rem;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+.clear {
+    grid-column: 1 / -1;
+}
